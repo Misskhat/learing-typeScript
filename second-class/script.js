@@ -13,4 +13,8 @@ console.log("first array", arr);
 const arr1 = ["name1", "name2"];
 console.log("second array", arr1);
 // declaration of Tuples
-//simple note => basically this declaration of 
+//note => basically this declaration of an array how to store and how may store.
+const tup = [2, "name1"];
+console.log("first tuple declaration", tup);
+const tup1 = [1, "name2", ["a", "b"]];
+console.log("second tuple declaration", tup1);
