@@ -3,7 +3,7 @@
  * Primitive types (number, string, boolean)
  * Arrays
  * Tuples
- * Enums
+ * Enums (Enumerations in simple calculation)
  * Any, Unknown, Void, Nul, Undefine, Never
  */
 
@@ -23,3 +23,22 @@ console.log("first tuple declaration", tup);
 
 const tup1: [number, string, Array: string[]] = [1, "name2", ["a", "b"]];
 console.log("second tuple declaration", tup1);
+
+// declaration of enum's
+//node => it's writing  key values type and it use for predefine information
+
+enum UserInfo {
+  ADMIN = "admin",
+  GUEST = "guest",
+  SUPER_ADMIN = "super_admin",
+}
+
+console.log("first enum is: ", UserInfo.ADMIN);
+
+enum ErrorStatus {
+  ABANDONED = "abandoned status code is 123123",
+  NOTFOUND = "not found status code is 321321",
+  BAD_REQUEST = "bad request code is 112211",
+}
+
+console.log("second enum is: ", ErrorStatus.NOTFOUND);
