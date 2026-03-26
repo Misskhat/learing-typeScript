@@ -49,3 +49,9 @@ function con() {
     console.log("Hi, I'm called from function");
 }
 con();
+//If function return and how to declare.
+function rtnFunction() {
+    return "This function return, it's type of return is string. For that reason after function name need to be mention of what kind of return this function.";
+}
+const functionValue = rtnFunction();
+console.log(functionValue);

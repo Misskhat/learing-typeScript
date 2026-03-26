@@ -62,5 +62,13 @@ if (typeof b === "string") {
 function con(): void {
   console.log("Hi, I'm called from function");
 }
-
 con();
+
+//If function return and how to declare.
+
+function rtnFunction(): string {
+  return "This function return, it's type of return is string. For that reason after function name need to be mention of what kind of return this function.";
+}
+
+const functionValue: string = rtnFunction();
+console.log(functionValue);
