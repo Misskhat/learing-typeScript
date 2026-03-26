@@ -42,3 +42,25 @@ enum ErrorStatus {
 }
 
 console.log("second enum is: ", ErrorStatus.NOTFOUND);
+
+// What is Any?
+// If we declare any variables and not define it then it's call any type variable.
+let a;
+
+//What is Unknown?
+// Basically unknown type define developer and it working when developer assign any condition and if true then it's work.
+
+let b: unknown;
+
+if (typeof b === "string") {
+  b.toUpperCase();
+}
+
+//What is void?
+// When a function not return anything then we use type void
+
+function con(): void {
+  console.log("Hi, I'm called from function");
+}
+
+con();
