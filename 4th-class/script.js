@@ -112,4 +112,24 @@ const u12 = new UserGetterSetter("Milon");
 u12._name = "Mishkat";
 const userName = u12.name;
 console.log(userName);
+//Static members: If we declare a class and if we don't make instance then we are not access the class. But if we mention the statics key word then we can access.
+class Machine {
+    version = 1;
+    getRandomNumber() {
+        return Math.random();
+    }
+}
+// console.log(Machine.version); // make error
+//but when we create instance:
+const mchin = new Machine();
+//now it's work. if we use statics then without instance it will be work.
+console.log(mchin.version);
+class Machine2 {
+    static version = 2;
+    static randonNumbers() {
+        return Math.random();
+    }
+}
+//So, here it's the difference.
+console.log(Machine2.randonNumbers());
 //# sourceMappingURL=script.js.map
