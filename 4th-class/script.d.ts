@@ -1,7 +1,7 @@
 /**
- * Classes and Objects
- * Class definition
- * Constructors
+ * Classes and Objects == Done
+ * Class definition == Done
+ * Constructors == Done
  * Access modifiers (public, private, protected)
  * ReadOnly properties
  * Optional properties

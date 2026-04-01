@@ -1,8 +1,8 @@
 "use strict";
 /**
- * Classes and Objects
- * Class definition
- * Constructors
+ * Classes and Objects == Done
+ * Class definition == Done
+ * Constructors == Done
  * Access modifiers (public, private, protected)
  * ReadOnly properties
  * Optional properties
@@ -36,8 +36,80 @@ class BottleMaker {
     }
     isLabeling = true;
 }
+class MetalBottleMaker extends BottleMaker {
+    weight = 0.5;
+}
 const b1 = new BottleMaker("MUM", "Metal", 1000, "mumIcon.png");
 const b2 = new BottleMaker("RFL", "Plastic", 120);
+b2.brandIcon = "rflIcon.png";
 console.log(b1);
 console.log(b2);
+//Access modifier (Public, Private, Protected)
+//Public:
+/**
+ * change in class
+ * change in subClass or Extended classes
+ * change outside after assigning to a variable
+ */
+//Private:
+/**
+ * change in class
+ * not change in subClass or Extended class. (note: it will be run but show error.)
+ * not change in outside after assigning to a variable. (note: it will be run but show error.)
+ */
+//Protected:
+/**
+ * change in class
+ * change in subClass or Extended classes
+ * not change in outside after assigning to a variable.
+ */
+//readonly
+class CalculatorMaker {
+    name;
+    constructor(name) {
+        this.name = name;
+    }
+    changeName() {
+        // this.name = "Milon"; (errorMessage: Cannot assign to 'name' because it is a read-only property.)
+    }
+}
+const c1 = new CalculatorMaker("Mishkat Hossain");
+console.log(c1);
+// getter and setter value
+class User {
+    name;
+    age;
+    constructor(name, age = 0, gender) {
+        this.name = name;
+        this.age = age;
+    }
+    get() {
+        return this.name;
+    }
+    set(value) {
+        this.name = value;
+    }
+}
+const u1 = new User("Mishkat");
+console.log(u1);
+u1.set("Milonnnnnnn");
+console.log(u1.get());
+class UserGetterSetter {
+    _name;
+    age;
+    constructor(_name, age = 1) {
+        this._name = _name;
+        this.age = age;
+    }
+    get name() {
+        return this._name;
+    }
+    set name(value) {
+        this._name = value;
+    }
+}
+const u12 = new UserGetterSetter("Milon");
+u12._name = "Mishkat";
+const userName = u12.name;
+console.log(userName);
 //# sourceMappingURL=script.js.map
