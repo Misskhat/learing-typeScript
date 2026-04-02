@@ -132,4 +132,5 @@ class Machine2 {
 }
 //So, here it's the difference.
 console.log(Machine2.randonNumbers());
+//Abstract classes and methods concept:
 //# sourceMappingURL=script.js.map

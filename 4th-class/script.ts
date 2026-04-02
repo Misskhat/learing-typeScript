@@ -160,6 +160,19 @@ class Machine2 {
   }
 }
 
-
 //So, here it's the difference.
 console.log(Machine2.randonNumbers());
+
+//Abstract classes and methods concept:
+//abstract call those class which not create instance.
+
+class MugMaker {
+  constructor(
+    private itemName: string,
+    private quantity: number,
+  ) {}
+}
+
+class TeaMug extends MugMaker {
+  private size: string = "small";
+}
