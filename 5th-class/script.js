@@ -25,4 +25,19 @@ function basicFn3(name, cd) {
 basicFn3("Milon", (agg) => {
     console.log(agg);
 });
+//now we create same function logically, for working above both functions.
+function abcd(a, b) {
+    if (typeof a === "string" && typeof b === "undefined") {
+        return "first function working";
+    }
+    if (typeof a === "string" && typeof b === "number") {
+        return 12;
+    }
+    else
+        throw new Error("something is wrong");
+}
+const overLoading1 = abcd("name");
+const overLoading2 = abcd("name", 33);
+console.log(overLoading1);
+console.log(overLoading2);
 //# sourceMappingURL=script.js.map
